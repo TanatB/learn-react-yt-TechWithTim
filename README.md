@@ -51,13 +51,13 @@ frontend-movie-app/src/
 
 ## Scripts
 
-| Command           | Description                  |
-| ----------------- | ---------------------------- |
-| `npm run dev`     | Start development server     |
-| `npm run build`   | Build for production         |
-| `npm run lint`    | Run ESLint                   |
-| `npm run preview` | Preview production build     |
+| Command           | Description              |
+| ----------------- | ------------------------ |
+| `npm run dev`     | Start development server |
+| `npm run build`   | Build for production     |
+| `npm run lint`    | Run ESLint               |
+| `npm run preview` | Preview production build |
 
 ## Credit
 
-Built following the [Tech With Tim](https://www.youtube.com/@TechWithTim) React tutorial on YouTube.
+Built following the [Tech With Tim](https://www.youtube.com/watch?v=G6D9cBaLViA) React tutorial on YouTube.
