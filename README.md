@@ -14,7 +14,7 @@ A React app for browsing, searching, and favoriting movies using the TMDB API. B
 - React 19
 - React Router v7
 - Vite 8
-- TMDB API
+- [TMDB API](https://www.themoviedb.org)
 
 ## Project Structure
 
