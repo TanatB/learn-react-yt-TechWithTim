@@ -1,24 +1,24 @@
-import './App.css';
+import './css/App.css';
 import MovieCard from './components/MovieCard';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Favorites from './pages/Favorites';
+import { MovieProvider } from './context/MovieContext';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const movieNumber = 1;
-
   return (
-    // Fragment <>
-    <>
-      Conditional Rendering
-      {movieNumber === 2 ? (
-        <MovieCard movie={{ title: "first Film", release_date: "2025" }} />
-      ) : (
-        <MovieCard movie={{ title: "Second Film", release_date: "2020" }} />
-      )}
-
-
-      <MovieCard movie={{ title: "Tim's Film", release_date: "2025" }} />
-      <MovieCard movie={{ title: "Third Film", release_date: "2020" }} />
-    </>
-  )
+    <MovieProvider>
+      <NavBar />
+      <main className='main-content'>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
+        </Routes>
+      </main>
+    </MovieProvider>
+  );
 }
 
 // 1. Make a basic dummy component
@@ -32,4 +32,4 @@ function Text({ display }) {
 }
 
 
-export default App
+export default App;

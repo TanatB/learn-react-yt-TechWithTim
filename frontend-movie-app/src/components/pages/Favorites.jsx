@@ -1,1 +1,0 @@
-// Display favorite movies for users
